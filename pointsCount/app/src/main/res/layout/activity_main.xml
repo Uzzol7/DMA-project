@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#f0f8ff">
 
 
 
@@ -17,7 +18,8 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#2f4f4f">
 
       <TextView
           android:layout_width="wrap_content"
@@ -29,18 +31,20 @@
           android:gravity="center"
           android:padding="4dp"
           android:text="Player A"
-          android:textColor="#000000"
-          android:textSize="30sp"
+          android:textColor="#f0f8ff"
+          android:textSize="35sp"
           android:textStyle="bold" />
 
       <Button
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginLeft="67dp"
+          android:layout_marginLeft="50dp"
           android:layout_marginTop="12dp"
+          android:background="#32cd32"
           android:fontFamily="sans-serif-light"
           android:onClick="addOneForPlayerA"
           android:text="Add Point"
+          android:textAlignment="center"
           android:textSize="15sp"
           android:textStyle="bold" />
 
@@ -52,7 +56,7 @@
           android:fontFamily="sans-serif-light"
           android:text="0"
           android:textAlignment="center"
-          android:textColor="#000000"
+          android:textColor="#f0f8ff"
           android:textSize="100sp"
           android:layout_marginLeft="22dp"/>
 
@@ -61,8 +65,8 @@
           android:layout_height="wrap_content"
           android:fontFamily="sans-serif-light"
           android:gravity="center"
-          android:text="sets"
-          android:textColor="#000000"
+          android:text="Points"
+          android:textColor="#f0f8ff"
           android:textSize="25sp"
           android:textStyle="bold"
           android:layout_marginLeft="22dp"
@@ -72,15 +76,16 @@
           android:id="@+id/sets_a_player"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
+          android:layout_marginLeft="22dp"
+          android:layout_marginBottom="45dp"
           android:fontFamily="sans-serif-light"
           android:gravity="center"
           android:text="0"
-          android:textColor="#000000"
+          android:textAlignment="center"
+          android:textColor="#f0f8ff"
           android:textSize="30sp"
-          android:textStyle="bold"
-          android:layout_marginLeft="22dp"
-          android:layout_marginBottom="45dp"
-          android:textAlignment="center"/>
+          android:textStyle="bold" />
+
 
     </LinearLayout>
 
@@ -100,17 +105,17 @@
         tools:context=".MainActivity">
 
       <TextView
-          android:layout_width="138dp"
+          android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginTop="16dp"
           android:layout_marginLeft="40dp"
+          android:layout_marginTop="16dp"
           android:layout_marginBottom="16dp"
           android:fontFamily="sans-serif-medium"
           android:gravity="center"
           android:padding="4dp"
           android:text="Player B"
-          android:textColor="#000000"
-          android:textSize="30sp"
+          android:textColor="#2f4f4f"
+          android:textSize="35sp"
           android:textStyle="bold" />
 
       <Button
@@ -134,7 +139,7 @@
           android:fontFamily="sans-serif-light"
           android:text="0"
           android:textAlignment="center"
-          android:textColor="#000000"
+          android:textColor="#2f4f4f"
           android:textSize="100sp"
           android:layout_marginRight="22dp" />
 
@@ -143,8 +148,8 @@
           android:layout_height="wrap_content"
           android:fontFamily="sans-serif-light"
           android:gravity="center"
-          android:text="sets"
-          android:textColor="#000000"
+          android:text="Points"
+          android:textColor="#2f4f4f"
           android:textSize="25sp"
           android:textStyle="bold"
           android:layout_marginRight="22dp"
@@ -164,6 +169,8 @@
           android:layout_marginBottom="100dp"
           android:textAlignment="center"/>
 
+
+
     </LinearLayout>
 
   </LinearLayout>
@@ -180,10 +187,11 @@
       android:id="@+id/reset"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Reset"
       android:layout_alignParentBottom="true"
       android:layout_centerHorizontal="true"
-      android:onClick="resetScore"
       android:layout_marginBottom="32dp"
-      />
+      android:onClick="resetScore"
+      android:text="Reset"
+      android:textSize="25sp"
+      android:background="#dc143c"/>
 </RelativeLayout>
