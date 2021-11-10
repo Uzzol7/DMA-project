@@ -22,30 +22,27 @@
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
+          android:layout_marginLeft="40dp"
           android:layout_marginTop="16dp"
+          android:layout_marginBottom="16dp"
           android:fontFamily="sans-serif-medium"
           android:gravity="center"
           android:padding="4dp"
           android:text="Player A"
-          android:textColor="#FFFFFF"
+          android:textColor="#000000"
           android:textSize="30sp"
-          android:textStyle="bold"
-          android:layout_marginBottom="16dp"
-          android:layout_marginLeft="40dp"
-          />
+          android:textStyle="bold" />
 
       <Button
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_alignParentLeft="true"
-          android:fontFamily="sans-serif-light"
           android:layout_marginLeft="67dp"
           android:layout_marginTop="12dp"
+          android:fontFamily="sans-serif-light"
+          android:onClick="addOneForPlayerA"
           android:text="Add Point"
           android:textSize="15sp"
-          android:textStyle="bold"
-          android:layout_alignParentStart="true"
-          android:onClick="addOneForPlayerA"/>
+          android:textStyle="bold" />
 
       <TextView
           android:id="@+id/Player_a_score"
@@ -55,7 +52,7 @@
           android:fontFamily="sans-serif-light"
           android:text="0"
           android:textAlignment="center"
-          android:textColor="#FFFFFF"
+          android:textColor="#000000"
           android:textSize="100sp"
           android:layout_marginLeft="22dp"/>
 
@@ -65,10 +62,11 @@
           android:fontFamily="sans-serif-light"
           android:gravity="center"
           android:text="sets"
-          android:textColor="#FFFFFF"
+          android:textColor="#000000"
           android:textSize="25sp"
           android:textStyle="bold"
-          android:layout_marginLeft="22dp"/>
+          android:layout_marginLeft="22dp"
+          android:textAlignment="center"/>
 
       <TextView
           android:id="@+id/sets_a_player"
@@ -77,11 +75,12 @@
           android:fontFamily="sans-serif-light"
           android:gravity="center"
           android:text="0"
-          android:textColor="#FFFFFF"
+          android:textColor="#000000"
           android:textSize="30sp"
           android:textStyle="bold"
           android:layout_marginLeft="22dp"
-          android:layout_marginBottom="45dp"/>
+          android:layout_marginBottom="45dp"
+          android:textAlignment="center"/>
 
     </LinearLayout>
 
@@ -101,31 +100,31 @@
         tools:context=".MainActivity">
 
       <TextView
-          android:layout_width="match_parent"
+          android:layout_width="138dp"
           android:layout_height="wrap_content"
           android:layout_marginTop="16dp"
+          android:layout_marginLeft="40dp"
+          android:layout_marginBottom="16dp"
           android:fontFamily="sans-serif-medium"
           android:gravity="center"
           android:padding="4dp"
           android:text="Player B"
-          android:textColor="#FFFFFF"
+          android:textColor="#000000"
           android:textSize="30sp"
-          android:textStyle="bold"
-          android:layout_marginBottom="16dp"
-          android:layout_marginRight="40dp" />
+          android:textStyle="bold" />
 
       <Button
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
+          android:layout_alignParentStart="true"
           android:layout_alignParentLeft="true"
-          android:fontFamily="sans-serif-light"
           android:layout_marginLeft="45dp"
           android:layout_marginTop="12dp"
+          android:fontFamily="sans-serif-light"
+          android:onClick="addOneForPlayerB"
           android:text="Add Point"
           android:textSize="15sp"
-          android:textStyle="bold"
-          android:layout_alignParentStart="true"
-          android:onClick="addOneForPlayerB"/>
+          android:textStyle="bold" />
 
       <TextView
           android:id="@+id/Player_b_score"
@@ -135,7 +134,7 @@
           android:fontFamily="sans-serif-light"
           android:text="0"
           android:textAlignment="center"
-          android:textColor="#FFFFFF"
+          android:textColor="#000000"
           android:textSize="100sp"
           android:layout_marginRight="22dp" />
 
@@ -145,10 +144,11 @@
           android:fontFamily="sans-serif-light"
           android:gravity="center"
           android:text="sets"
-          android:textColor="#FFFFFF"
+          android:textColor="#000000"
           android:textSize="25sp"
           android:textStyle="bold"
-          android:layout_marginRight="22dp"/>
+          android:layout_marginRight="22dp"
+          android:textAlignment="center"/>
 
       <TextView
           android:id="@+id/sets_b_player"
@@ -157,11 +157,12 @@
           android:fontFamily="sans-serif-light"
           android:gravity="center"
           android:text="0"
-          android:textColor="#FFFFFF"
+          android:textColor="#000000"
           android:textSize="30sp"
           android:textStyle="bold"
           android:layout_marginRight="22dp"
-          android:layout_marginBottom="100dp"/>
+          android:layout_marginBottom="100dp"
+          android:textAlignment="center"/>
 
     </LinearLayout>
 
